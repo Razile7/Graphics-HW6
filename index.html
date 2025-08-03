@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HW6 - Interactive Basketball Shooting Game</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/ui.css">
+</head>
+<body>
+    <!-- UI Container -->
+    <div id="ui-container">
+        <div id="score-display">
+            <h3>Game Statistics</h3>
+            <div class="score-item">
+                <span class="score-label">Score:</span>
+                <span id="player-score">0</span>
+            </div>
+            <div class="score-item">
+                <span class="score-label">Shot Power:</span>
+                <span id="power-value">50%</span>
+            </div>
+        </div>
+
+        <div id="stats-display">
+            <h3>Statistics</h3>
+            <div class="score-item">
+                <span class="score-label">Shots Made:</span>
+                <span id="shots-made">0</span>
+            </div>
+            <div class="score-item">
+                <span class="score-label">Shot Attempts:</span>
+                <span id="shot-attempts">0</span>
+            </div>
+            <div class="score-item">
+                <span class="score-label">Accuracy:</span>
+                <span id="accuracy">0.0%</span>
+            </div>
+        </div>
+        
+        <div id="controls-display">
+            <h3>Basketball Controls</h3>
+            <div class="control-section">
+                <h4>Movement</h4>
+                <p><strong>↑↓←→</strong> - Move basketball around court</p>
+                <p><strong>W/S</strong> - Adjust shot power (↑/↓)</p>
+            </div>
+            <div class="control-section">
+                <h4>Actions</h4>
+                <p><strong>SPACEBAR</strong> - Shoot basketball</p>
+                <p><strong>R</strong> - Reset ball to center</p>
+                <p><strong>O</strong> - Toggle camera controls</p>
+            </div>
+        </div>
+
+        <div id="game-status">
+            <div id="status-message"></div>
+        </div>
+    </div>
+    
+    <!-- Three.js CDN with import map -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js",
+            "three/examples/jsm/controls/OrbitControls": "./lib/OrbitControls.js"
+        }
+    }
+    </script>
+    
+    <!-- Main entry point -->
+    <script type="module" src="src/main.js"></script>
+
+
+</body>
+</html>
