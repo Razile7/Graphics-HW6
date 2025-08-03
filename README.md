@@ -23,7 +23,7 @@ https://github.com/rudyops/graphics5-final-project.git
    ```bash
    node index.js
    ```
-5. Open your web browser and navigate to: `http://localhost:8080`
+5. Open your web browser and navigate to: `http://localhost:8000`
 
 ## Complete List of Implemented Controls
 
